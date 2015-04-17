@@ -1,0 +1,1 @@
+"./msp430_gpio.obj" "./main.obj" "./lcd_16x2.obj" "./i2c.obj" "./gpio_pin.obj" "./fj2207.obj" "./dvbt2_fifo.obj" "./dac8830.obj" "./cdce62005.obj" "./bitbang.obj" "./ads62p49.obj" "../lnk_msp430f4618.cmd" -l"libc.a" 

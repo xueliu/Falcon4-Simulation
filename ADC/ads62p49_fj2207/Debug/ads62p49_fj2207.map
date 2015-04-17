@@ -1,0 +1,1311 @@
+******************************************************************************
+                  MSP430 Linker PC v4.1.5                      
+******************************************************************************
+>> Linked Mon Nov 10 11:59:22 2014
+
+OUTPUT FILE NAME:   <ads62p49_fj2207.out>
+ENTRY POINT SYMBOL: "_c_int00"  address: 0000366a
+
+
+MEMORY CONFIGURATION
+
+         name            origin    length      used     unused   attr    fill
+----------------------  --------  ---------  --------  --------  ----  --------
+  SFR                   00000000   00000010  00000000  00000010  RWIX
+  PERIPHERALS_8BIT      00000010   000000f0  00000000  000000f0  RWIX
+  PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
+  INFOB                 00001000   00000080  00000000  00000080  RWIX
+  INFOA                 00001080   00000080  00000000  00000080  RWIX
+  RAM                   00001100   00002000  000008c2  0000173e  RWIX
+  FLASH                 00003100   0000cec0  00005920  000075a0  RWIX
+  INT00                 0000ffc0   00000002  00000000  00000002  RWIX
+  INT01                 0000ffc2   00000002  00000000  00000002  RWIX
+  INT02                 0000ffc4   00000002  00000000  00000002  RWIX
+  INT03                 0000ffc6   00000002  00000000  00000002  RWIX
+  INT04                 0000ffc8   00000002  00000000  00000002  RWIX
+  INT05                 0000ffca   00000002  00000000  00000002  RWIX
+  INT06                 0000ffcc   00000002  00000000  00000002  RWIX
+  INT07                 0000ffce   00000002  00000000  00000002  RWIX
+  INT08                 0000ffd0   00000002  00000000  00000002  RWIX
+  INT09                 0000ffd2   00000002  00000000  00000002  RWIX
+  INT10                 0000ffd4   00000002  00000000  00000002  RWIX
+  INT11                 0000ffd6   00000002  00000000  00000002  RWIX
+  INT12                 0000ffd8   00000002  00000000  00000002  RWIX
+  INT13                 0000ffda   00000002  00000000  00000002  RWIX
+  INT14                 0000ffdc   00000002  00000000  00000002  RWIX
+  INT15                 0000ffde   00000002  00000000  00000002  RWIX
+  INT16                 0000ffe0   00000002  00000000  00000002  RWIX
+  INT17                 0000ffe2   00000002  00000000  00000002  RWIX
+  INT18                 0000ffe4   00000002  00000000  00000002  RWIX
+  INT19                 0000ffe6   00000002  00000000  00000002  RWIX
+  INT20                 0000ffe8   00000002  00000000  00000002  RWIX
+  INT21                 0000ffea   00000002  00000000  00000002  RWIX
+  INT22                 0000ffec   00000002  00000000  00000002  RWIX
+  INT23                 0000ffee   00000002  00000000  00000002  RWIX
+  INT24                 0000fff0   00000002  00000000  00000002  RWIX
+  INT25                 0000fff2   00000002  00000002  00000000  RWIX
+  INT26                 0000fff4   00000002  00000000  00000002  RWIX
+  INT27                 0000fff6   00000002  00000000  00000002  RWIX
+  INT28                 0000fff8   00000002  00000000  00000002  RWIX
+  INT29                 0000fffa   00000002  00000000  00000002  RWIX
+  INT30                 0000fffc   00000002  00000000  00000002  RWIX
+  RESET                 0000fffe   00000002  00000002  00000000  RWIX
+  FLASH2                00010000   00010000  00000000  00010000  RWIX
+
+
+SECTION ALLOCATION MAP
+
+ output                                  attributes/
+section   page    origin      length       input sections
+--------  ----  ----------  ----------   ----------------
+.pinit     0    00003100    00000000     UNINITIALIZED
+
+.bss       0    00001100    00000702     UNINITIALIZED
+                  00001100    0000050a     main.obj (.bss)
+                  0000160a    0000011a     rts430x.lib : defs.obj (.bss)
+                  00001724    000000a2                 : lowlev.obj (.bss)
+                  000017c6    0000000c     cdce62005.obj (.bss)
+                  000017d2    0000000a     dvbt2_fifo.obj (.bss)
+                  000017dc    00000008     rts430x.lib : _lock.obj (.bss)
+                  000017e4    00000008                 : boot.obj (.bss)
+                  000017ec    00000008                 : memory.obj (.bss)
+                  000017f4    00000008                 : trgdrv.obj (.bss)
+                  000017fc    00000003     ads62p49.obj (.bss)
+                  000017ff    00000001     --HOLE--
+                  00001800    00000002     rts430x.lib : fopen.obj (.bss)
+
+.cio       0    00001802    00000120     UNINITIALIZED
+                  00001802    00000120     rts430x.lib : trgmsg.obj (.cio)
+
+.sysmem    0    00001924    00000050     UNINITIALIZED
+                  00001924    00000004     rts430x.lib : memory.obj (.sysmem)
+                  00001928    0000004c     --HOLE--
+
+.stack     0    000030b0    00000050     UNINITIALIZED
+                  000030b0    00000002     rts430x.lib : boot.obj (.stack)
+                  000030b2    0000004e     --HOLE--
+
+.cinit     0    00003100    0000056a     
+                  00003100    000004e6     main.obj (.cinit)
+                  000035e6    00000042     rts430x.lib : lowlev.obj (.cinit)
+                  00003628    0000002e                 : defs.obj (.cinit)
+                  00003656    00000006                 : fopen.obj (.cinit)
+                  0000365c    00000006                 : memory.obj (.cinit)
+                  00003662    00000005     ads62p49.obj (.cinit)
+                  00003667    00000001     --HOLE-- [fill = 0]
+                  00003668    00000002     (.pad.cinit) [fill = 0]
+
+.text:_isr 
+*          0    0000366a    00000062     
+                  0000366a    00000038     rts430x.lib : boot.obj (.text:_isr:_c_int00_noargs)
+                  000036a2    0000002a     main.obj (.text:_isr:USCIA0RX_ISR)
+
+.text      0    000036cc    00004f76     
+                  000036cc    00000dc2     fj2207.obj (.text:fj2207_write_field)
+                  0000448e    00000c78     fj2207.obj (.text:fj2207_read_field)
+                  00005106    00000454     main.obj (.text:main)
+                  0000555a    000002f0     cdce62005.obj (.text:cdce62005_configure_output)
+                  0000584a    0000025c     fj2207.obj (.text:fj2207_set)
+                  00005aa6    00000218     cdce62005.obj (.text:cdce62005_basic_pll_setup)
+                  00005cbe    00000200     lcd_16x2.obj (.text:lcd_init)
+                  00005ebe    000001e6     cdce62005.obj (.text:cdce62005_disable_all_outputs)
+                  000060a4    00000186     lcd_16x2.obj (.text:lcd_write_char)
+                  0000622a    00000186     lcd_16x2.obj (.text:lcd_write_cmd)
+                  000063b0    00000176     main.obj (.text:update_lcd)
+                  00006526    00000156     lcd_16x2.obj (.text:lcd_define_kt_logo)
+                  0000667c    00000130     rts430x.lib : fs_add.obj (.text)
+                  000067ac    0000010e                 : _printfi_min.obj (.text:_setfield)
+                  000068ba    00000102     cdce62005.obj (.text:cdce62005_enable_output)
+                  000069bc    000000de     rts430x.lib : fputs.obj (.text:fputs)
+                  00006a9a    000000c4                 : setvbuf.obj (.text:setvbuf)
+                  00006b5e    000000c0                 : _printfi_min.obj (.text:_printfi_minimal)
+                  00006c1e    000000a6                 : memory.obj (.text:malloc)
+                  00006cc4    000000a0     lcd_16x2.obj (.text:lcd_write_unsigned_number)
+                  00006d64    0000009a     i2c.obj (.text:i2c_choose_device)
+                  00006dfe    00000098     cdce62005.obj (.text:cdce62005_init)
+                  00006e96    00000094     lcd_16x2.obj (.text:lcd_write_init)
+                  00006f2a    0000008c     rts430x.lib : fputc.obj (.text:fputc)
+                  00006fb6    00000086                 : trgdrv.obj (.text:HOSTlseek)
+                  0000703c    00000080                 : memory.obj (.text:free)
+                  000070bc    0000007a                 : _io_perm.obj (.text:_wrt_ok)
+                  00007136    0000006e     i2c.obj (.text:i2c_write_byte)
+                  000071a4    0000006a     rts430x.lib : trgdrv.obj (.text:HOSTrename)
+                  0000720e    0000006a                 : fseek.obj (.text:fseek)
+                  00007278    00000064     cdce62005.obj (.text:cdce62005_write_config)
+                  000072dc    00000062     rts430x.lib : trgdrv.obj (.text:HOSTopen)
+                  0000733e    00000062                 : fflush.obj (.text:_doflush)
+                  000073a0    00000060                 : fclose.obj (.text:_closefile)
+                  00007400    0000005e                 : trgdrv.obj (.text:HOSTwrite)
+                  0000745e    0000005c                 : trgdrv.obj (.text:HOSTread)
+                  000074ba    0000005a     dac8830.obj (.text:dac_write_word)
+                  00007514    00000058     fj2207.obj (.text:fj2207_get_byte_register)
+                  0000756c    00000058     rts430x.lib : div32u.obj (.text)
+                  000075c4    00000052                 : _printfi_min.obj (.text:_ltostr)
+                  00007616    00000052                 : lowlev.obj (.text:getdevice)
+                  00007668    00000052     lcd_16x2.obj (.text:lcd_write_kt_logo)
+                  000076ba    00000050     main.obj (.text:int2string)
+                  0000770a    00000050     rts430x.lib : lowlev.obj (.text:lseek)
+                  0000775a    0000004e     ads62p49.obj (.text:_write_byte)
+                  000077a8    0000004e     cdce62005.obj (.text:_write_byte)
+                  000077f6    0000004e     fj2207.obj (.text:fj2207_write_byte_register)
+                  00007844    0000004c     rts430x.lib : _printfi_min.obj (.text:_pproc_diouxp)
+                  00007890    0000004c     lcd_16x2.obj (.text:lcd_set_pos)
+                  000078dc    0000004a     rts430x.lib : lowlev.obj (.text:close)
+                  00007926    0000004a                 : fs_cmp.obj (.text)
+                  00007970    00000048                 : autoinit.obj (.text:_auto_init)
+                  000079b8    00000048                 : fflush.obj (.text:fflush)
+                  00007a00    00000048                 : fprintf.obj (.text:fprintf)
+                  00007a48    00000044                 : trgdrv.obj (.text:HOSTclose)
+                  00007a8c    00000044     cdce62005.obj (.text:cdce62005_set_prescaler)
+                  00007ad0    00000044     rts430x.lib : lowlev.obj (.text:write)
+                  00007b14    00000042                 : trgdrv.obj (.text:HOSTunlink)
+                  00007b56    00000042     cdce62005.obj (.text:cdce62005_spi_write)
+                  00007b98    00000040     rts430x.lib : _printfi_min.obj (.text:_pproc_str)
+                  00007bd8    00000040     dac8830.obj (.text:dac_spi_init)
+                  00007c18    0000003e     cdce62005.obj (.text:cdce62005_set_LF_C1)
+                  00007c56    0000003e     rts430x.lib : lsl32.obj (.text:l_lsl_const)
+                  00007c94    0000003e                 : lsr32.obj (.text:l_lsr_const)
+                  00007cd2    0000003c     cdce62005.obj (.text:cdce62005_loop_filter_init)
+                  00007d0e    0000003c     cdce62005.obj (.text:cdce62005_vco_calibration)
+                  00007d4a    00000038     i2c.obj (.text:i2c_get_byte)
+                  00007d82    00000038     rts430x.lib : memory.obj (.text:minit)
+                  00007dba    00000034     ads62p49.obj (.text:ads62p49_init)
+                  00007dee    00000034     ads62p49.obj (.text:ads62p49_spi_write)
+                  00007e22    00000032     rts430x.lib : fopen.obj (.text:_cleanup)
+                  00007e54    00000032     i2c.obj (.text:i2c_get_bit)
+                  00007e86    00000030     cdce62005.obj (.text:cdce62005_set_input_divider)
+                  00007eb6    00000030     rts430x.lib : lowlev.obj (.text:finddevice)
+                  00007ee6    00000030     i2c.obj (.text:i2c_init)
+                  00007f16    0000002e     rts430x.lib : _printfi_min.obj (.text:_getarg_diouxp)
+                  00007f44    0000002e     cdce62005.obj (.text:cdce62005_set_LF_R3)
+                  00007f72    0000002e     rts430x.lib : exit.obj (.text:exit)
+                  00007fa0    0000002e     lcd_16x2.obj (.text:lcd_write_string)
+                  00007fce    0000002e     rts430x.lib : trgmsg.obj (.text:writemsg)
+                  00007ffc    0000002c     cdce62005.obj (.text:cdce62005_set_LF_C3)
+                  00008028    0000002c     cdce62005.obj (.text:cdce62005_set_LF_R2)
+                  00008054    0000002c     dvbt2_fifo.obj (.text:fifo_pop)
+                  00008080    0000002c     rts430x.lib : trgmsg.obj (.text:readmsg)
+                  000080ac    0000002c                 : strncpy.obj (.text:strncpy)
+                  000080d8    0000002a     cdce62005.obj (.text:cdce62005_set_LF_C2)
+                  00008102    0000002a     rts430x.lib : lowlev.obj (.text:unlink)
+                  0000812c    00000028                 : assert.obj (.text:_abort_msg)
+                  00008154    00000028     fj2207.obj (.text:fj2207_read_registers)
+                  0000817c    00000026     ads62p49.obj (.text:ads62p49_set_test_mode)
+                  000081a2    00000024     cdce62005.obj (.text:cdce62005_set_LockWindow)
+                  000081c6    00000024     i2c.obj (.text:i2c_send_start_sequence)
+                  000081ea    00000022     cdce62005.obj (.text:cdce62005_set_SmartMux)
+                  0000820c    00000022     cdce62005.obj (.text:cdce62005_set_cp_current)
+                  0000822e    00000022     cdce62005.obj (.text:cdce62005_set_feedback_bypass_divider)
+                  00008250    00000020     ads62p49.obj (.text:ads62p49_set_gain)
+                  00008270    00000020     ads62p49.obj (.text:ads62p49_set_offset_corr_time)
+                  00008290    00000020     ads62p49.obj (.text:ads62p49_set_offset_pedestal)
+                  000082b0    00000020     cdce62005.obj (.text:cdce62005_pre_divider_sec_ref)
+                  000082d0    00000020     cdce62005.obj (.text:cdce62005_set_feedback_divider)
+                  000082f0    00000020     cdce62005.obj (.text:cdce62005_set_input_buff_sel)
+                  00008310    0000001e     ads62p49.obj (.text:ads62p49_set_offset_correction)
+                  0000832e    0000001e     cdce62005.obj (.text:cdce62005_pre_divider_pri_ref)
+                  0000834c    0000001e     cdce62005.obj (.text:cdce62005_set_VCO_sel)
+                  0000836a    0000001c     i2c.obj (.text:i2c_send_stop_sequence)
+                  00008386    0000001c     rts430x.lib : memccpy.obj (.text:memccpy)
+                  000083a2    0000001a     main.obj (.text:SPI_Initialization)
+                  000083bc    0000001a     rts430x.lib : _printfi_min.obj (.text:_div)
+                  000083d6    00000018     ads62p49.obj (.text:ads62p49_spi_chip_enable)
+                  000083ee    00000018     cdce62005.obj (.text:cdce62005_spi_chip_enable)
+                  00008406    00000018     fj2207.obj (.text:fj2207_init)
+                  0000841e    00000018     rts430x.lib : strchr.obj (.text:strchr)
+                  00008436    00000018                 : strcmp.obj (.text:strcmp)
+                  0000844e    00000016     cdce62005.obj (.text:cdce62005_aux_out_disable)
+                  00008464    00000016     rts430x.lib : div16u.obj (.text)
+                  0000847a    00000016                 : mult16_hw.obj (.text)
+                  00008490    00000014     lcd_16x2.obj (.text:delay_us)
+                  000084a4    00000014     rts430x.lib : memchr.obj (.text:memchr)
+                  000084b8    00000014                 : memset.obj (.text:memset)
+                  000084cc    00000012     ads62p49.obj (.text:ads62p49_set_channel_control)
+                  000084de    00000012     dvbt2_fifo.obj (.text:fifo_init)
+                  000084f0    00000012     rts430x.lib : memcpy.obj (.text:memcpy)
+                  00008502    00000012     msp430_gpio.obj (.text:msp430_gpio_get)
+                  00008514    00000012     msp430_gpio.obj (.text:msp430_gpio_init)
+                  00008526    00000010     ads62p49.obj (.text:ads62p49_set_low_speed_mode)
+                  00008536    00000010     ads62p49.obj (.text:ads62p49_set_lvds_cmos)
+                  00008546    00000010     ads62p49.obj (.text:ads62p49_set_power_down_mode)
+                  00008556    00000010     rts430x.lib : strcpy.obj (.text:strcpy)
+                  00008566    0000000e     dvbt2_fifo.obj (.text:fifo_full)
+                  00008574    0000000e     dvbt2_fifo.obj (.text:fifo_push)
+                  00008582    0000000e     gpio_pin.obj (.text:gpio_pin_configure_as_input)
+                  00008590    0000000e     gpio_pin.obj (.text:gpio_pin_configure_as_output)
+                  0000859e    0000000e     gpio_pin.obj (.text:gpio_pin_get)
+                  000085ac    0000000e     gpio_pin.obj (.text:gpio_pin_set_highz)
+                  000085ba    0000000e     rts430x.lib : strlen.obj (.text:strlen)
+                  000085c8    0000000c     gpio_pin.obj (.text:gpio_pin_clear)
+                  000085d4    0000000c     gpio_pin.obj (.text:gpio_pin_set)
+                  000085e0    0000000c     msp430_gpio.obj (.text:msp430_gpio_configure_as_input)
+                  000085ec    0000000c     msp430_gpio.obj (.text:msp430_gpio_configure_as_output)
+                  000085f8    0000000a     gpio_pin.obj (.text:gpio_pin_init)
+                  00008602    0000000a     msp430_gpio.obj (.text:msp430_gpio_clear)
+                  0000860c    0000000a     msp430_gpio.obj (.text:msp430_gpio_set)
+                  00008616    0000000a     msp430_gpio.obj (.text:msp430_gpio_toggle)
+                  00008620    0000000a     rts430x.lib : lsl16.obj (.text)
+                  0000862a    00000006                 : fprintf.obj (.text:_outc)
+                  00008630    00000004                 : fprintf.obj (.text:_outs)
+                  00008634    00000004                 : pre_init.obj (.text:_system_pre_init)
+                  00008638    00000004                 : exit.obj (.text:abort)
+                  0000863c    00000004                 : remove.obj (.text:remove)
+                  00008640    00000002                 : _lock.obj (.text:_nop)
+
+.const     0    00008642    000003de     
+                  00008642    00000276     cdce62005.obj (.const:.string)
+                  000088b8    000000d8     lcd_16x2.obj (.const:.string)
+                  00008990    0000004e     main.obj (.const:.string)
+                  000089de    00000014     rts430x.lib : _printfi_min.obj (.const:.string)
+                  000089f2    00000008     lcd_16x2.obj (.const:.string:$P$T0$1)
+                  000089fa    00000008     lcd_16x2.obj (.const:.string:$P$T1$2)
+                  00008a02    00000008     lcd_16x2.obj (.const:.string:$P$T2$3)
+                  00008a0a    00000008     lcd_16x2.obj (.const:.string:$P$T3$4)
+                  00008a12    00000008     lcd_16x2.obj (.const:.string:$P$T4$5)
+                  00008a1a    00000003     rts430x.lib : assert.obj (.const:.string)
+                  00008a1d    00000001     --HOLE-- [fill = 0]
+                  00008a1e    00000002                 : fputs.obj (.const:.string)
+
+.int25     0    0000fff2    00000002     
+                  0000fff2    00000002     main.obj (.int25)
+
+.reset     0    0000fffe    00000002     
+                  0000fffe    00000002     rts430x.lib : boot.obj (.reset)
+
+
+GLOBAL SYMBOLS: SORTED ALPHABETICALLY BY Name 
+
+address    name
+--------   ----
+00001100   .bss
+ffffffff   .text
+000001a0   ADC12CTL0
+000001a2   ADC12CTL1
+000001a6   ADC12IE
+000001a4   ADC12IFG
+000001a8   ADC12IV
+00000080   ADC12MCTL0
+00000081   ADC12MCTL1
+0000008a   ADC12MCTL10
+0000008b   ADC12MCTL11
+0000008c   ADC12MCTL12
+0000008d   ADC12MCTL13
+0000008e   ADC12MCTL14
+0000008f   ADC12MCTL15
+00000082   ADC12MCTL2
+00000083   ADC12MCTL3
+00000084   ADC12MCTL4
+00000085   ADC12MCTL5
+00000086   ADC12MCTL6
+00000087   ADC12MCTL7
+00000088   ADC12MCTL8
+00000089   ADC12MCTL9
+00000140   ADC12MEM0
+00000142   ADC12MEM1
+00000154   ADC12MEM10
+00000156   ADC12MEM11
+00000158   ADC12MEM12
+0000015a   ADC12MEM13
+0000015c   ADC12MEM14
+0000015e   ADC12MEM15
+00000144   ADC12MEM2
+00000146   ADC12MEM3
+00000148   ADC12MEM4
+0000014a   ADC12MEM5
+0000014c   ADC12MEM6
+0000014e   ADC12MEM7
+00000150   ADC12MEM8
+00000152   ADC12MEM9
+00000046   BTCNT1
+00000046   BTCNT12
+00000047   BTCNT2
+00000040   BTCTL
+00008638   C$$EXIT
+00007ff8   C$$IO$$
+00000059   CACTL1
+0000005a   CACTL2
+0000005b   CAPD
+000001d0   DMA0CTL
+000001d6   DMA0DA
+000001d6   DMA0DAL
+000001d2   DMA0SA
+000001d2   DMA0SAL
+000001da   DMA0SZ
+000001dc   DMA1CTL
+000001e2   DMA1DA
+000001e2   DMA1DAL
+000001de   DMA1SA
+000001de   DMA1SAL
+000001e6   DMA1SZ
+000001e8   DMA2CTL
+000001ee   DMA2DA
+000001ee   DMA2DAL
+000001ea   DMA2SA
+000001ea   DMA2SAL
+000001f2   DMA2SZ
+00000122   DMACTL0
+00000124   DMACTL1
+00000126   DMAIV
+00000128   FCTL1
+0000012a   FCTL2
+0000012c   FCTL3
+00000053   FLL_CTL0
+00000054   FLL_CTL1
+00007a48   HOSTclose
+00006fb6   HOSTlseek
+000072dc   HOSTopen
+0000745e   HOSTread
+000071a4   HOSTrename
+00007b14   HOSTunlink
+00007400   HOSTwrite
+00000000   IE1
+00000001   IE2
+00000002   IFG1
+00000003   IFG2
+00008620   I_LSL
+00000090   LCDACTL
+000000ac   LCDAPCTL0
+000000ad   LCDAPCTL1
+000000ae   LCDAVCTL0
+000000af   LCDAVCTL1
+00000091   LCDM1
+0000009a   LCDM10
+0000009b   LCDM11
+0000009c   LCDM12
+0000009d   LCDM13
+0000009e   LCDM14
+0000009f   LCDM15
+000000a0   LCDM16
+000000a1   LCDM17
+000000a2   LCDM18
+000000a3   LCDM19
+00000092   LCDM2
+000000a4   LCDM20
+00000093   LCDM3
+00000094   LCDM4
+00000095   LCDM5
+00000096   LCDM6
+00000097   LCDM7
+00000098   LCDM8
+00000099   LCDM9
+00007c8e   L_LSL_1
+00007c6a   L_LSL_10
+00007c66   L_LSL_11
+00007c62   L_LSL_12
+00007c5e   L_LSL_13
+00007c5a   L_LSL_14
+00007c56   L_LSL_15
+00007c8a   L_LSL_2
+00007c86   L_LSL_3
+00007c82   L_LSL_4
+00007c7e   L_LSL_5
+00007c7a   L_LSL_6
+00007c76   L_LSL_7
+00007c72   L_LSL_8
+00007c6e   L_LSL_9
+00007ccc   L_LSR_1
+00007ca8   L_LSR_10
+00007ca4   L_LSR_11
+00007ca0   L_LSR_12
+00007c9c   L_LSR_13
+00007c98   L_LSR_14
+00007c94   L_LSR_15
+00007cc8   L_LSR_2
+00007cc4   L_LSR_3
+00007cc0   L_LSR_4
+00007cbc   L_LSR_5
+00007cb8   L_LSR_6
+00007cb4   L_LSR_7
+00007cb0   L_LSR_8
+00007cac   L_LSR_9
+00000134   MAC
+00000136   MACS
+00000005   ME2
+00000130   MPY
+00000132   MPYS
+00000138   OP2
+0000000d   P10DIR
+00000009   P10IN
+0000000b   P10OUT
+0000000f   P10SEL
+00000022   P1DIR
+00000025   P1IE
+00000024   P1IES
+00000023   P1IFG
+00000020   P1IN
+00000021   P1OUT
+00000026   P1SEL
+0000002a   P2DIR
+0000002d   P2IE
+0000002c   P2IES
+0000002b   P2IFG
+00000028   P2IN
+00000029   P2OUT
+0000002e   P2SEL
+0000001a   P3DIR
+00000018   P3IN
+00000019   P3OUT
+0000001b   P3SEL
+0000001e   P4DIR
+0000001c   P4IN
+0000001d   P4OUT
+0000001f   P4SEL
+00000032   P5DIR
+00000030   P5IN
+00000031   P5OUT
+00000033   P5SEL
+00000036   P6DIR
+00000034   P6IN
+00000035   P6OUT
+00000037   P6SEL
+0000003c   P7DIR
+00000038   P7IN
+0000003a   P7OUT
+0000003e   P7SEL
+0000003d   P8DIR
+00000039   P8IN
+0000003b   P8OUT
+0000003f   P8SEL
+0000000c   P9DIR
+00000008   P9IN
+0000000a   P9OUT
+0000000e   P9SEL
+0000003c   PADIR
+00000038   PAIN
+0000003a   PAOUT
+0000003e   PASEL
+0000000c   PBDIR
+00000008   PBIN
+0000000a   PBOUT
+0000000e   PBSEL
+0000013c   RESHI
+0000013a   RESLO
+00000041   RTCCTL
+0000004c   RTCDATE
+0000004c   RTCDAY
+0000004d   RTCMON
+00000042   RTCNT1
+00000043   RTCNT2
+00000044   RTCNT3
+00000045   RTCNT4
+00000042   RTCTIM0
+00000044   RTCTIM1
+00000040   RTCTL
+0000004e   RTCYEAR
+0000004f   RTCYEARH
+0000004e   RTCYEARL
+00000050   SCFI0
+00000051   SCFI1
+00000052   SCFQCTL
+000015c0   SPI_Data
+000083a2   SPI_Initialization
+0000013e   SUMEXT
+00000056   SVSCTL
+00000172   TACCR0
+00000174   TACCR1
+00000176   TACCR2
+00000162   TACCTL0
+00000164   TACCTL1
+00000166   TACCTL2
+00000160   TACTL
+0000012e   TAIV
+00000170   TAR
+00000192   TBCCR0
+00000194   TBCCR1
+00000196   TBCCR2
+00000198   TBCCR3
+0000019a   TBCCR4
+0000019c   TBCCR5
+0000019e   TBCCR6
+00000182   TBCCTL0
+00000184   TBCCTL1
+00000186   TBCCTL2
+00000188   TBCCTL3
+0000018a   TBCCTL4
+0000018c   TBCCTL5
+0000018e   TBCCTL6
+00000180   TBCTL
+0000011e   TBIV
+00000190   TBR
+0000007c   U1BR0
+0000007d   U1BR1
+00000078   U1CTL
+0000007b   U1MCTL
+0000007a   U1RCTL
+0000007e   U1RXBUF
+00000079   U1TCTL
+0000007f   U1TXBUF
+0000005d   UCA0ABCTL
+00000062   UCA0BR0
+00000063   UCA0BR1
+00000060   UCA0CTL0
+00000061   UCA0CTL1
+0000005f   UCA0IRRCTL
+0000005e   UCA0IRTCTL
+00000064   UCA0MCTL
+00000066   UCA0RXBUF
+00000065   UCA0STAT
+00000067   UCA0TXBUF
+0000006a   UCB0BR0
+0000006b   UCB0BR1
+00000068   UCB0CTL0
+00000069   UCB0CTL1
+0000006c   UCB0I2CIE
+00000118   UCB0I2COA
+0000011a   UCB0I2CSA
+0000006e   UCB0RXBUF
+0000006d   UCB0STAT
+0000006f   UCB0TXBUF
+000036a2   USCIA0RX_ISR
+00000120   WDTCTL
+00001802   _CIOBUF_
+00003100   __STACK_END
+00000050   __STACK_SIZE
+00000050   __SYSMEM_SIZE
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+ffffffff   __binit__
+00001100   __bss__
+ffffffff   __c_args__
+00003100   __cinit__
+00008464   __divu
+0000756c   __divul
+00001802   __end__
+ffffffff   __etext__
+00006682   __fs_add
+00007926   __fs_cmp
+0000667c   __fs_sub
+0000847a   __mpyi_hw
+ffffffff   __pinit__
+00008464   __remu
+0000756c   __remul
+ffffffff   __text__
+0000812c   _abort_msg
+00007970   _auto_init
+0000366a   _c_int00
+0000366a   _c_int00_noargs
+00007e22   _cleanup
+000017e4   _cleanup_ptr
+000073a0   _closefile
+0000733e   _doflush
+000017e8   _dtors_ptr
+00001722   _ft_end
+0000160a   _ftable
+000017dc   _lock
+00008640   _nop
+000017c8   _output_type_0
+000017ca   _output_type_1
+000017cc   _output_type_2
+000017ce   _output_type_3
+000017d0   _output_type_4
+00006b5e   _printfi_minimal
+0000fffe   _reset_vector
+000030b0   _stack
+00001924   _sys_memory
+00008634   _system_pre_init
+00001682   _tmpnams
+000017e0   _unlock
+000077a8   _write_byte
+000070bc   _wrt_ok
+00008638   abort
+00007dba   ads62p49_init
+000084cc   ads62p49_set_channel_control
+00008250   ads62p49_set_gain
+00008526   ads62p49_set_low_speed_mode
+00008536   ads62p49_set_lvds_cmos
+00008270   ads62p49_set_offset_corr_time
+00008310   ads62p49_set_offset_correction
+00008290   ads62p49_set_offset_pedestal
+00008546   ads62p49_set_power_down_mode
+0000817c   ads62p49_set_test_mode
+000083d6   ads62p49_spi_chip_enable
+00007dee   ads62p49_spi_write
+0000153a   ads_dev_1
+ffffffff   binit
+000015c2   buf
+0000844e   cdce62005_aux_out_disable
+00005aa6   cdce62005_basic_pll_setup
+0000555a   cdce62005_configure_output
+00005ebe   cdce62005_disable_all_outputs
+000068ba   cdce62005_enable_output
+00006dfe   cdce62005_init
+00007cd2   cdce62005_loop_filter_init
+0000832e   cdce62005_pre_divider_pri_ref
+000082b0   cdce62005_pre_divider_sec_ref
+00007c18   cdce62005_set_LF_C1
+000080d8   cdce62005_set_LF_C2
+00007ffc   cdce62005_set_LF_C3
+00008028   cdce62005_set_LF_R2
+00007f44   cdce62005_set_LF_R3
+000081a2   cdce62005_set_LockWindow
+000081ea   cdce62005_set_SmartMux
+0000834c   cdce62005_set_VCO_sel
+0000820c   cdce62005_set_cp_current
+0000822e   cdce62005_set_feedback_bypass_divider
+000082d0   cdce62005_set_feedback_divider
+000082f0   cdce62005_set_input_buff_sel
+00007e86   cdce62005_set_input_divider
+00007a8c   cdce62005_set_prescaler
+000083ee   cdce62005_spi_chip_enable
+00007b56   cdce62005_spi_write
+00007d0e   cdce62005_vco_calibration
+00007278   cdce62005_write_config
+00003100   cinit
+000078dc   close
+0000148e   dac_cs
+00001182   dac_cs_param
+000015b8   dac_handle
+00007bd8   dac_spi_init
+000074ba   dac_write_word
+000015d0   debug_pin
+000015c6   debug_pin_param
+00008490   delay_us
+00001802   end
+ffffffff   etext
+00007f72   exit
+000079b8   fflush
+000017d2   fifoBuffer
+000017da   fifoBuffer16
+00008566   fifo_full
+000015f2   fifo_handle
+000084de   fifo_init
+00008054   fifo_pop
+00008574   fifo_push
+00007514   fj2207_get_byte_register
+00001562   fj2207_h
+00008406   fj2207_init
+0000448e   fj2207_read_field
+00008154   fj2207_read_registers
+0000584a   fj2207_set
+000077f6   fj2207_write_byte_register
+000036cc   fj2207_write_field
+000015c4   flag
+00007a00   fprintf
+00006f2a   fputc
+000069bc   fputs
+0000703c   free
+0000720e   fseek
+000085c8   gpio_pin_clear
+00008582   gpio_pin_configure_as_input
+00008590   gpio_pin_configure_as_output
+0000859e   gpio_pin_get
+000085f8   gpio_pin_init
+000085d4   gpio_pin_set
+000085ac   gpio_pin_set_highz
+00006d64   i2c_choose_device
+00007e54   i2c_get_bit
+00007d4a   i2c_get_byte
+00007ee6   i2c_init
+000014d2   i2c_scl
+00001196   i2c_scl_param
+000014b0   i2c_sda
+0000118c   i2c_sda_param
+000081c6   i2c_send_start_sequence
+0000836a   i2c_send_stop_sequence
+00007136   i2c_write_byte
+000076ba   int2string
+000013a0   lcd_bit_4
+000011a0   lcd_bit_4_param
+000013c2   lcd_bit_5
+000011aa   lcd_bit_5_param
+000013e4   lcd_bit_6
+000011b4   lcd_bit_6_param
+00001406   lcd_bit_7
+000011be   lcd_bit_7_param
+00006526   lcd_define_kt_logo
+00001428   lcd_enable
+000011c8   lcd_enable_param
+000014f4   lcd_handle
+00005cbe   lcd_init
+0000146c   lcd_rs
+000011dc   lcd_rs_param
+0000144a   lcd_rw
+000011d2   lcd_rw_param
+00007890   lcd_set_pos
+000060a4   lcd_write_char
+0000622a   lcd_write_cmd
+00006e96   lcd_write_init
+00007668   lcd_write_kt_logo
+00007fa0   lcd_write_string
+00006cc4   lcd_write_unsigned_number
+0000770a   lseek
+00005106   main
+00006c1e   malloc
+00008386   memccpy
+000084a4   memchr
+000084f0   memcpy
+000084b8   memset
+00007d82   minit
+00008602   msp430_gpio_clear
+000085e0   msp430_gpio_configure_as_input
+000085ec   msp430_gpio_configure_as_output
+00008502   msp430_gpio_get
+00008514   msp430_gpio_init
+0000860c   msp430_gpio_set
+000085e0   msp430_gpio_set_highz
+00008616   msp430_gpio_toggle
+0000135c   msp_led0
+0000116e   msp_led0_param
+ffffffff   pinit
+0000150e   pll_dev_1
+0000137e   push_button0_n
+00001178   push_button0_n_param
+00006f2a   putc
+00008080   readmsg
+0000863c   remove
+000015be   res
+00001560   result
+00006a9a   setvbuf
+0000126e   spi_ads_dev_1_ce
+00001128   spi_ads_dev_1_ce_param
+00001290   spi_ads_dev_1_reset
+00001132   spi_ads_dev_1_reset_param
+000011e6   spi_miso
+00001100   spi_miso_param
+00001208   spi_mosi
+0000110a   spi_mosi_param
+000012d4   spi_msp_sw0
+000012f6   spi_msp_sw1
+00001318   spi_msp_sw2
+0000133a   spi_msp_sw3
+00001146   spi_msp_sw_0_param
+00001150   spi_msp_sw_1_param
+0000115a   spi_msp_sw_2_param
+00001164   spi_msp_sw_3_param
+000012b2   spi_pll_dac_ce
+0000113c   spi_pll_dac_ce_param
+0000124c   spi_pll_dev_1_ce
+0000111e   spi_pll_dev_1_ce_param
+0000122a   spi_sclk
+00001114   spi_sclk_param
+0000841e   strchr
+00008436   strcmp
+00008556   strcpy
+000085ba   strlen
+000080ac   strncpy
+000017fe   temp_gain
+00008102   unlink
+000063b0   update_lcd
+00007ad0   write
+00007fce   writemsg
+
+
+GLOBAL SYMBOLS: SORTED BY Symbol Address 
+
+address    name
+--------   ----
+00000000   IE1
+00000001   IE2
+00000001   __TI_args_main
+00000001   __TI_auto_init
+00000001   __TI_exit
+00000002   IFG1
+00000003   IFG2
+00000005   ME2
+00000008   P9IN
+00000008   PBIN
+00000009   P10IN
+0000000a   P9OUT
+0000000a   PBOUT
+0000000b   P10OUT
+0000000c   P9DIR
+0000000c   PBDIR
+0000000d   P10DIR
+0000000e   P9SEL
+0000000e   PBSEL
+0000000f   P10SEL
+00000018   P3IN
+00000019   P3OUT
+0000001a   P3DIR
+0000001b   P3SEL
+0000001c   P4IN
+0000001d   P4OUT
+0000001e   P4DIR
+0000001f   P4SEL
+00000020   P1IN
+00000021   P1OUT
+00000022   P1DIR
+00000023   P1IFG
+00000024   P1IES
+00000025   P1IE
+00000026   P1SEL
+00000028   P2IN
+00000029   P2OUT
+0000002a   P2DIR
+0000002b   P2IFG
+0000002c   P2IES
+0000002d   P2IE
+0000002e   P2SEL
+00000030   P5IN
+00000031   P5OUT
+00000032   P5DIR
+00000033   P5SEL
+00000034   P6IN
+00000035   P6OUT
+00000036   P6DIR
+00000037   P6SEL
+00000038   P7IN
+00000038   PAIN
+00000039   P8IN
+0000003a   P7OUT
+0000003a   PAOUT
+0000003b   P8OUT
+0000003c   P7DIR
+0000003c   PADIR
+0000003d   P8DIR
+0000003e   P7SEL
+0000003e   PASEL
+0000003f   P8SEL
+00000040   BTCTL
+00000040   RTCTL
+00000041   RTCCTL
+00000042   RTCNT1
+00000042   RTCTIM0
+00000043   RTCNT2
+00000044   RTCNT3
+00000044   RTCTIM1
+00000045   RTCNT4
+00000046   BTCNT1
+00000046   BTCNT12
+00000047   BTCNT2
+0000004c   RTCDATE
+0000004c   RTCDAY
+0000004d   RTCMON
+0000004e   RTCYEAR
+0000004e   RTCYEARL
+0000004f   RTCYEARH
+00000050   SCFI0
+00000050   __STACK_SIZE
+00000050   __SYSMEM_SIZE
+00000051   SCFI1
+00000052   SCFQCTL
+00000053   FLL_CTL0
+00000054   FLL_CTL1
+00000056   SVSCTL
+00000059   CACTL1
+0000005a   CACTL2
+0000005b   CAPD
+0000005d   UCA0ABCTL
+0000005e   UCA0IRTCTL
+0000005f   UCA0IRRCTL
+00000060   UCA0CTL0
+00000061   UCA0CTL1
+00000062   UCA0BR0
+00000063   UCA0BR1
+00000064   UCA0MCTL
+00000065   UCA0STAT
+00000066   UCA0RXBUF
+00000067   UCA0TXBUF
+00000068   UCB0CTL0
+00000069   UCB0CTL1
+0000006a   UCB0BR0
+0000006b   UCB0BR1
+0000006c   UCB0I2CIE
+0000006d   UCB0STAT
+0000006e   UCB0RXBUF
+0000006f   UCB0TXBUF
+00000078   U1CTL
+00000079   U1TCTL
+0000007a   U1RCTL
+0000007b   U1MCTL
+0000007c   U1BR0
+0000007d   U1BR1
+0000007e   U1RXBUF
+0000007f   U1TXBUF
+00000080   ADC12MCTL0
+00000081   ADC12MCTL1
+00000082   ADC12MCTL2
+00000083   ADC12MCTL3
+00000084   ADC12MCTL4
+00000085   ADC12MCTL5
+00000086   ADC12MCTL6
+00000087   ADC12MCTL7
+00000088   ADC12MCTL8
+00000089   ADC12MCTL9
+0000008a   ADC12MCTL10
+0000008b   ADC12MCTL11
+0000008c   ADC12MCTL12
+0000008d   ADC12MCTL13
+0000008e   ADC12MCTL14
+0000008f   ADC12MCTL15
+00000090   LCDACTL
+00000091   LCDM1
+00000092   LCDM2
+00000093   LCDM3
+00000094   LCDM4
+00000095   LCDM5
+00000096   LCDM6
+00000097   LCDM7
+00000098   LCDM8
+00000099   LCDM9
+0000009a   LCDM10
+0000009b   LCDM11
+0000009c   LCDM12
+0000009d   LCDM13
+0000009e   LCDM14
+0000009f   LCDM15
+000000a0   LCDM16
+000000a1   LCDM17
+000000a2   LCDM18
+000000a3   LCDM19
+000000a4   LCDM20
+000000ac   LCDAPCTL0
+000000ad   LCDAPCTL1
+000000ae   LCDAVCTL0
+000000af   LCDAVCTL1
+00000118   UCB0I2COA
+0000011a   UCB0I2CSA
+0000011e   TBIV
+00000120   WDTCTL
+00000122   DMACTL0
+00000124   DMACTL1
+00000126   DMAIV
+00000128   FCTL1
+0000012a   FCTL2
+0000012c   FCTL3
+0000012e   TAIV
+00000130   MPY
+00000132   MPYS
+00000134   MAC
+00000136   MACS
+00000138   OP2
+0000013a   RESLO
+0000013c   RESHI
+0000013e   SUMEXT
+00000140   ADC12MEM0
+00000142   ADC12MEM1
+00000144   ADC12MEM2
+00000146   ADC12MEM3
+00000148   ADC12MEM4
+0000014a   ADC12MEM5
+0000014c   ADC12MEM6
+0000014e   ADC12MEM7
+00000150   ADC12MEM8
+00000152   ADC12MEM9
+00000154   ADC12MEM10
+00000156   ADC12MEM11
+00000158   ADC12MEM12
+0000015a   ADC12MEM13
+0000015c   ADC12MEM14
+0000015e   ADC12MEM15
+00000160   TACTL
+00000162   TACCTL0
+00000164   TACCTL1
+00000166   TACCTL2
+00000170   TAR
+00000172   TACCR0
+00000174   TACCR1
+00000176   TACCR2
+00000180   TBCTL
+00000182   TBCCTL0
+00000184   TBCCTL1
+00000186   TBCCTL2
+00000188   TBCCTL3
+0000018a   TBCCTL4
+0000018c   TBCCTL5
+0000018e   TBCCTL6
+00000190   TBR
+00000192   TBCCR0
+00000194   TBCCR1
+00000196   TBCCR2
+00000198   TBCCR3
+0000019a   TBCCR4
+0000019c   TBCCR5
+0000019e   TBCCR6
+000001a0   ADC12CTL0
+000001a2   ADC12CTL1
+000001a4   ADC12IFG
+000001a6   ADC12IE
+000001a8   ADC12IV
+000001d0   DMA0CTL
+000001d2   DMA0SA
+000001d2   DMA0SAL
+000001d6   DMA0DA
+000001d6   DMA0DAL
+000001da   DMA0SZ
+000001dc   DMA1CTL
+000001de   DMA1SA
+000001de   DMA1SAL
+000001e2   DMA1DA
+000001e2   DMA1DAL
+000001e6   DMA1SZ
+000001e8   DMA2CTL
+000001ea   DMA2SA
+000001ea   DMA2SAL
+000001ee   DMA2DA
+000001ee   DMA2DAL
+000001f2   DMA2SZ
+00001100   .bss
+00001100   __bss__
+00001100   spi_miso_param
+0000110a   spi_mosi_param
+00001114   spi_sclk_param
+0000111e   spi_pll_dev_1_ce_param
+00001128   spi_ads_dev_1_ce_param
+00001132   spi_ads_dev_1_reset_param
+0000113c   spi_pll_dac_ce_param
+00001146   spi_msp_sw_0_param
+00001150   spi_msp_sw_1_param
+0000115a   spi_msp_sw_2_param
+00001164   spi_msp_sw_3_param
+0000116e   msp_led0_param
+00001178   push_button0_n_param
+00001182   dac_cs_param
+0000118c   i2c_sda_param
+00001196   i2c_scl_param
+000011a0   lcd_bit_4_param
+000011aa   lcd_bit_5_param
+000011b4   lcd_bit_6_param
+000011be   lcd_bit_7_param
+000011c8   lcd_enable_param
+000011d2   lcd_rw_param
+000011dc   lcd_rs_param
+000011e6   spi_miso
+00001208   spi_mosi
+0000122a   spi_sclk
+0000124c   spi_pll_dev_1_ce
+0000126e   spi_ads_dev_1_ce
+00001290   spi_ads_dev_1_reset
+000012b2   spi_pll_dac_ce
+000012d4   spi_msp_sw0
+000012f6   spi_msp_sw1
+00001318   spi_msp_sw2
+0000133a   spi_msp_sw3
+0000135c   msp_led0
+0000137e   push_button0_n
+000013a0   lcd_bit_4
+000013c2   lcd_bit_5
+000013e4   lcd_bit_6
+00001406   lcd_bit_7
+00001428   lcd_enable
+0000144a   lcd_rw
+0000146c   lcd_rs
+0000148e   dac_cs
+000014b0   i2c_sda
+000014d2   i2c_scl
+000014f4   lcd_handle
+0000150e   pll_dev_1
+0000153a   ads_dev_1
+00001560   result
+00001562   fj2207_h
+000015b8   dac_handle
+000015be   res
+000015c0   SPI_Data
+000015c2   buf
+000015c4   flag
+000015c6   debug_pin_param
+000015d0   debug_pin
+000015f2   fifo_handle
+0000160a   _ftable
+00001682   _tmpnams
+00001722   _ft_end
+000017c8   _output_type_0
+000017ca   _output_type_1
+000017cc   _output_type_2
+000017ce   _output_type_3
+000017d0   _output_type_4
+000017d2   fifoBuffer
+000017da   fifoBuffer16
+000017dc   _lock
+000017e0   _unlock
+000017e4   _cleanup_ptr
+000017e8   _dtors_ptr
+000017fe   temp_gain
+00001802   _CIOBUF_
+00001802   __end__
+00001802   end
+00001924   _sys_memory
+000030b0   _stack
+00003100   __STACK_END
+00003100   __cinit__
+00003100   cinit
+0000366a   _c_int00
+0000366a   _c_int00_noargs
+000036a2   USCIA0RX_ISR
+000036cc   fj2207_write_field
+0000448e   fj2207_read_field
+00005106   main
+0000555a   cdce62005_configure_output
+0000584a   fj2207_set
+00005aa6   cdce62005_basic_pll_setup
+00005cbe   lcd_init
+00005ebe   cdce62005_disable_all_outputs
+000060a4   lcd_write_char
+0000622a   lcd_write_cmd
+000063b0   update_lcd
+00006526   lcd_define_kt_logo
+0000667c   __fs_sub
+00006682   __fs_add
+000068ba   cdce62005_enable_output
+000069bc   fputs
+00006a9a   setvbuf
+00006b5e   _printfi_minimal
+00006c1e   malloc
+00006cc4   lcd_write_unsigned_number
+00006d64   i2c_choose_device
+00006dfe   cdce62005_init
+00006e96   lcd_write_init
+00006f2a   fputc
+00006f2a   putc
+00006fb6   HOSTlseek
+0000703c   free
+000070bc   _wrt_ok
+00007136   i2c_write_byte
+000071a4   HOSTrename
+0000720e   fseek
+00007278   cdce62005_write_config
+000072dc   HOSTopen
+0000733e   _doflush
+000073a0   _closefile
+00007400   HOSTwrite
+0000745e   HOSTread
+000074ba   dac_write_word
+00007514   fj2207_get_byte_register
+0000756c   __divul
+0000756c   __remul
+00007668   lcd_write_kt_logo
+000076ba   int2string
+0000770a   lseek
+000077a8   _write_byte
+000077f6   fj2207_write_byte_register
+00007890   lcd_set_pos
+000078dc   close
+00007926   __fs_cmp
+00007970   _auto_init
+000079b8   fflush
+00007a00   fprintf
+00007a48   HOSTclose
+00007a8c   cdce62005_set_prescaler
+00007ad0   write
+00007b14   HOSTunlink
+00007b56   cdce62005_spi_write
+00007bd8   dac_spi_init
+00007c18   cdce62005_set_LF_C1
+00007c56   L_LSL_15
+00007c5a   L_LSL_14
+00007c5e   L_LSL_13
+00007c62   L_LSL_12
+00007c66   L_LSL_11
+00007c6a   L_LSL_10
+00007c6e   L_LSL_9
+00007c72   L_LSL_8
+00007c76   L_LSL_7
+00007c7a   L_LSL_6
+00007c7e   L_LSL_5
+00007c82   L_LSL_4
+00007c86   L_LSL_3
+00007c8a   L_LSL_2
+00007c8e   L_LSL_1
+00007c94   L_LSR_15
+00007c98   L_LSR_14
+00007c9c   L_LSR_13
+00007ca0   L_LSR_12
+00007ca4   L_LSR_11
+00007ca8   L_LSR_10
+00007cac   L_LSR_9
+00007cb0   L_LSR_8
+00007cb4   L_LSR_7
+00007cb8   L_LSR_6
+00007cbc   L_LSR_5
+00007cc0   L_LSR_4
+00007cc4   L_LSR_3
+00007cc8   L_LSR_2
+00007ccc   L_LSR_1
+00007cd2   cdce62005_loop_filter_init
+00007d0e   cdce62005_vco_calibration
+00007d4a   i2c_get_byte
+00007d82   minit
+00007dba   ads62p49_init
+00007dee   ads62p49_spi_write
+00007e22   _cleanup
+00007e54   i2c_get_bit
+00007e86   cdce62005_set_input_divider
+00007ee6   i2c_init
+00007f44   cdce62005_set_LF_R3
+00007f72   exit
+00007fa0   lcd_write_string
+00007fce   writemsg
+00007ff8   C$$IO$$
+00007ffc   cdce62005_set_LF_C3
+00008028   cdce62005_set_LF_R2
+00008054   fifo_pop
+00008080   readmsg
+000080ac   strncpy
+000080d8   cdce62005_set_LF_C2
+00008102   unlink
+0000812c   _abort_msg
+00008154   fj2207_read_registers
+0000817c   ads62p49_set_test_mode
+000081a2   cdce62005_set_LockWindow
+000081c6   i2c_send_start_sequence
+000081ea   cdce62005_set_SmartMux
+0000820c   cdce62005_set_cp_current
+0000822e   cdce62005_set_feedback_bypass_divider
+00008250   ads62p49_set_gain
+00008270   ads62p49_set_offset_corr_time
+00008290   ads62p49_set_offset_pedestal
+000082b0   cdce62005_pre_divider_sec_ref
+000082d0   cdce62005_set_feedback_divider
+000082f0   cdce62005_set_input_buff_sel
+00008310   ads62p49_set_offset_correction
+0000832e   cdce62005_pre_divider_pri_ref
+0000834c   cdce62005_set_VCO_sel
+0000836a   i2c_send_stop_sequence
+00008386   memccpy
+000083a2   SPI_Initialization
+000083d6   ads62p49_spi_chip_enable
+000083ee   cdce62005_spi_chip_enable
+00008406   fj2207_init
+0000841e   strchr
+00008436   strcmp
+0000844e   cdce62005_aux_out_disable
+00008464   __divu
+00008464   __remu
+0000847a   __mpyi_hw
+00008490   delay_us
+000084a4   memchr
+000084b8   memset
+000084cc   ads62p49_set_channel_control
+000084de   fifo_init
+000084f0   memcpy
+00008502   msp430_gpio_get
+00008514   msp430_gpio_init
+00008526   ads62p49_set_low_speed_mode
+00008536   ads62p49_set_lvds_cmos
+00008546   ads62p49_set_power_down_mode
+00008556   strcpy
+00008566   fifo_full
+00008574   fifo_push
+00008582   gpio_pin_configure_as_input
+00008590   gpio_pin_configure_as_output
+0000859e   gpio_pin_get
+000085ac   gpio_pin_set_highz
+000085ba   strlen
+000085c8   gpio_pin_clear
+000085d4   gpio_pin_set
+000085e0   msp430_gpio_configure_as_input
+000085e0   msp430_gpio_set_highz
+000085ec   msp430_gpio_configure_as_output
+000085f8   gpio_pin_init
+00008602   msp430_gpio_clear
+0000860c   msp430_gpio_set
+00008616   msp430_gpio_toggle
+00008620   I_LSL
+00008634   _system_pre_init
+00008638   C$$EXIT
+00008638   abort
+0000863c   remove
+00008640   _nop
+0000fffe   _reset_vector
+ffffffff   .text
+ffffffff   __binit__
+ffffffff   __c_args__
+ffffffff   __etext__
+ffffffff   __pinit__
+ffffffff   __text__
+ffffffff   binit
+ffffffff   etext
+ffffffff   pinit
+
+[512 symbols]
