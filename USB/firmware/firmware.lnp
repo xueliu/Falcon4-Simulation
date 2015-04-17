@@ -1,0 +1,9 @@
+"firmware.obj",
+"fw.obj",
+".\lib\Ezusb.lib",
+".\lib\USBJmpTb.OBJ",
+"dscr.obj" 
+TO "firmware" 
+RAMSIZE(256) 
+CODE( 0x80-0x0FFF )
+XDATA( 0x1000 )

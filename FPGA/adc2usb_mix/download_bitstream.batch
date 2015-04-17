@@ -1,0 +1,7 @@
+setMode -bscan
+setCable -p auto
+setCableSpeed -speed 6000000
+identify
+assignfile -p 1 -file adc2usb_mix.bit
+program -p 1
+quit

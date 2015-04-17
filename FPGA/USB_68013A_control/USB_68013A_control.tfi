@@ -1,0 +1,21 @@
+
+
+
+// Instantiate the module
+USB_68013A_control instance_name (
+    .usb_data_input(usb_data_input), 
+    .usb_clkout_drv(usb_clkout_drv), 
+    .usb_fifo_flag_b_full_n(usb_fifo_flag_b_full_n), 
+    .usb_fifo_addr_input(usb_fifo_addr_input), 
+    .usb_slcs_n_input(usb_slcs_n_input), 
+    .usb_reset_n_input(usb_reset_n_input), 
+    .usb_data_output(usb_data_output), 
+    .usb_fifo_slrd_n(usb_fifo_slrd_n), 
+    .usb_fifo_slwr_n(usb_fifo_slwr_n), 
+    .usb_fifo_sloe_n(usb_fifo_sloe_n), 
+    .usb_fifo_addr(usb_fifo_addr), 
+    .usb_slcs_n(usb_slcs_n), 
+    .usb_reset_n_output(usb_reset_n_output)
+    );
+
+

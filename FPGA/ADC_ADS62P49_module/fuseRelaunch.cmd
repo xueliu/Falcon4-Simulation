@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/xue liu/Desktop/spectrum_sensing/falcon4/module/ADC_ADS62P49_module/ADC_ADS62P49_testbench_isim_beh.exe" -prj "C:/Users/xue liu/Desktop/spectrum_sensing/falcon4/module/ADC_ADS62P49_module/ADC_ADS62P49_testbench_beh.prj" "work.ADC_ADS62P49_testbench" "work.glbl" 

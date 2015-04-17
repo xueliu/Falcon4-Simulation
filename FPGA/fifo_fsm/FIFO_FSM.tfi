@@ -1,0 +1,13 @@
+
+
+
+// Instantiate the module
+FIFO_FSM instance_name (
+    .iClk(iClk), 
+    .iRst_N(iRst_N), 
+    .iEmpty(iEmpty), 
+    .iFull(iFull), 
+    .oFIFO_WR_EN(oFIFO_WR_EN)
+    );
+
+

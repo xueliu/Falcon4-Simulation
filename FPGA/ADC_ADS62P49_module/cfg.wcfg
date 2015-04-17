@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/xue liu/Desktop/spectrum_sensing/falcon4/module/ADC_ADS62P49_module/ADC_ADS62P49_testbench_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="ADC_ADS62P49_testbench" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="4" />
+   <wvobject fp_name="/ADC_ADS62P49_testbench/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ADC_ADS62P49_testbench/counter" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">counter[13:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[13:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group32" type="group">
+      <obj_property name="label">adc_clk_src</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_ADS62P49_testbench/uut/adc_da_nxt" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adc_da_nxt[6:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_da_nxt[6:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group31" type="group">
+      <obj_property name="label">adc_clk_drv</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/ADC_ADS62P49_testbench/adc_clk_drv" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">adc_clk_drv</obj_property>
+         <obj_property name="ObjectShortName">adc_clk_drv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_ADS62P49_testbench/uut/adc_da_ff_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adc_da_ff_reg[13:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_da_ff_reg[13:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_ADS62P49_testbench/uut/adc_da_2nd_ff_reg" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adc_da_2nd_ff_reg[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_da_2nd_ff_reg[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/ADC_ADS62P49_testbench/adc_da_output" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">adc_da_output[15:0]</obj_property>
+         <obj_property name="ObjectShortName">adc_da_output[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>
