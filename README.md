@@ -5,7 +5,7 @@ The Falcon4-Simulation project is an Open Source Software Package that enables o
 
 The Simulink-RTL-SDR project was initiated at the *Department of Communication Technologies (KT))* at the *University of Duisburg-Essen*, Germany, <http://www.kt.uni-due.de/>.
 
-This README.md is based on the one from [rtl-sdr](https://github.com/kit-cel/simulink-rtl-sdr) 
+This project is partly based on [rtl-sdr](https://github.com/kit-cel/simulink-rtl-sdr) 
 
 Requirements
 ------------
